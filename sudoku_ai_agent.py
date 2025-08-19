@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
 
+
 # ==== AI SUDOKU AGENT ====
 class SudokuAgent:
     def __init__(self, board):
