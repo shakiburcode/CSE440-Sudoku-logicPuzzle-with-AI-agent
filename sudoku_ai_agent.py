@@ -29,6 +29,7 @@ class SudokuAgent:
         _, r, c = min(unassigned)
         return r, c
 
+    
     def forward_checking(self, r, c, val):
         changes = []
         for i in range(9):
