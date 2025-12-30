@@ -5,5 +5,6 @@ Save the code as sudoku_gui.py.
 
 Open terminal in VS Code.
 
+
 Run the file:
 python sudoku_gui.py
