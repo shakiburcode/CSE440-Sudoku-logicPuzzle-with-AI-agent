@@ -62,6 +62,7 @@ class SudokuAgent:
                 ok, changes = self.forward_checking(r, c, val)
                 if ok and self.solve():
                     return True
+                    
 
                 self.restore_domains(changes)
                 self.domains[(r, c)] = saved_domain
