@@ -9,6 +9,7 @@ class SudokuAgent:
             for r in range(9) for c in range(9)
         }
 
+    
     def is_valid(self, r, c, val):
         for i in range(9):
             if self.board[r][i] == val or self.board[i][c] == val:
@@ -19,6 +20,7 @@ class SudokuAgent:
                 if self.board[box_r + i][box_c + j] == val:
                     return False
         return True
+        
 
     def select_unassigned_variable(self):
         unassigned = [(len(self.domains[(r, c)]), r, c)
