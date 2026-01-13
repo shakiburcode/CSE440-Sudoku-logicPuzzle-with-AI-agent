@@ -8,7 +8,6 @@ class SudokuAgent:
             (r, c): {board[r][c]} if board[r][c] != 0 else set(range(1, 10))
             for r in range(9) for c in range(9)
         }
-
     
     def is_valid(self, r, c, val):
         for i in range(9):
